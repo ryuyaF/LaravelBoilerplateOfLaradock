@@ -21,21 +21,19 @@ MYSQL_VERSION=5.7.16
 ```
 
 ### Laradockのコンテナ群を立ち上げる
-`cd laradock`
-
-`docker-compose up -d mysql nginx`
+``` bash
+cd laradock
+docker-compose up -d mysql nginx
+```
 
 ### Laravelのインストール
-
-`docker-compose exec workspace bash`
-
-`cp .env.example .env`
-
-`composer install`
-
-`php artisan migrate`
-
-`php artisan key:generage`
+``` bash
+docker-compose exec workspace bash
+cp .env.example .env
+composer install
+php artisan migrate
+php artisan key:generage
+```
 
 ### 動作確認
 [http://localhost](http://localhost)にアクセスしてLaravelのWelcomeページが表示されていればOK
