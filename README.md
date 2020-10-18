@@ -11,7 +11,7 @@ LaradockをベースにしたLaravelのボイラープレート
 2. リポジトリ名、概要等の必要な情報を入力し、新しいリポジトリを作成
 
 ### 任意のプロジェクト名で作成したリポジトリをクローン
-`git clone --recurse-submodules　your_create_new_repository.git {ProjectName}`
+`git clone --recurse-submodules your_create_new_repository.git {ProjectName}`
 
 Laradockをサブモジュールとしてリポジトリに組み込んでいるため、`--recurse-submodules`オプションを付ける
 
