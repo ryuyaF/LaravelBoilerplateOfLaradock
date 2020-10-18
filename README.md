@@ -10,9 +10,14 @@ LaradockをベースにしたLaravelのボイラープレート
 Laradockをサブモジュールとしてリポジトリに組み込んでいるため、`--recuse-submodules`オプションを付ける
 
 ### Laradockの環境構築
-```
+``` bash
 cd {ProjectName}
 cp env-example laradock/.env
+```
+
+※既に他のLaradockプロジェクトを構築している場合、`COMPOSE_PROJECT_NAME`の値を変更する
+
+``` bash
 cd laradock
 docker-compose up -d mysql nginx
 ```
