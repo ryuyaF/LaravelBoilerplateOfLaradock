@@ -4,24 +4,15 @@
 LaradockをベースにしたLaravelのボイラープレート
 
 ## 使い方
-### リポジトリをクローン
-`git clone --recurse-submodules https://github.com/ryuyaF/LaravelBoilerplateOfLaradock.git`
+### 任意のプロジェクト名でリポジトリをクローン
+`git clone --recurse-submodules https://github.com/ryuyaF/LaravelBoilerplateOfLaradock.git {ProjectName}`
 
 Laradockをサブモジュールとしてリポジトリに組み込んでいるため、`--recuse-submodules`オプションを付ける
 
-### Laradockのenvファイルをコピーする
-`cp env-example laradock/.env`
-
-※WSL2を使用している場合、mysqlが上手く起動しないためバージョンは以下を指定する
-
-https://github.com/docker/for-win/issues/4824
-
-```env:laradock/.env
-MYSQL_VERSION=5.7.16
+### Laradockの環境構築
 ```
-
-### Laradockのコンテナ群を立ち上げる
-``` bash
+cd {ProjectName}
+cp env-example laradock/.env
 cd laradock
 docker-compose up -d mysql nginx
 ```
