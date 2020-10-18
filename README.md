@@ -4,10 +4,16 @@
 LaradockをベースにしたLaravelのボイラープレート
 
 ## 使い方
-### 任意のプロジェクト名でリポジトリをクローン
-`git clone --recurse-submodules https://github.com/ryuyaF/LaravelBoilerplateOfLaradock.git {ProjectName}`
 
-Laradockをサブモジュールとしてリポジトリに組み込んでいるため、`--recuse-submodules`オプションを付ける
+### このテンプレートリポジトリをベースに、新しいGitHubリポジトリを作成する
+
+1. 画面上部の`Use This Template`のリンクをクリック
+2. リポジトリ名、概要等の必要な情報を入力し、新しいリポジトリを作成
+
+### 任意のプロジェクト名で作成したリポジトリをクローン
+`git clone --recurse-submodules　your_create_new_repository.git {ProjectName}`
+
+Laradockをサブモジュールとしてリポジトリに組み込んでいるため、`--recurse-submodules`オプションを付ける
 
 ### Laradockの環境構築
 ``` bash
